@@ -11,7 +11,6 @@ public class Lab3_2 {
      *     Maximum: 5
      */
 
-
     public static void main(String[] args) {
         int[] myArray = {1, 2, 3, 5, 10, 35, -60, 15, 52};
         int max = myArray[0];
