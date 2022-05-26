@@ -22,20 +22,10 @@ public class Lab3_2 {
         }
         System.out.printf("\n");
 
-        for (int index = 1; index < myArray.length; index++) {
-            if (myArray[index] > max){
-                int tmp = max;
-                max = myArray[index];
-                myArray[index] = tmp;
-            }
-        }
+        for (int i = 0; i < myArray.length; i++) {
+            min = min > myArray[i]? myArray[i] : min;
+            max = max < myArray[i]? myArray[i] : max;
 
-        for (int index = 1; index < myArray.length; index++) {
-            if (myArray[index] < min){
-                int tmp = min;
-                min = myArray[index];
-                myArray[index] = tmp;
-            }
         }
 
         System.out.printf("Minimum: %d\n", min);
