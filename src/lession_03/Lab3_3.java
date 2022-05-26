@@ -2,11 +2,13 @@ package lession_03;
 
 public class Lab3_3 {
 
-//    Sort an integer array from min to max
-//
-//    Input: {12, 34, 1, 16, 28}
-//    Expected output: {1, 12, 16, 28, 34}
-
+    /**
+     * Sort an integer array from min to max
+     *
+     *     Input: {12, 34, 1, 16, 28}
+     *     Expected output: {1, 12, 16, 28, 34}
+     *
+     */
 
     public static void main(String[] args) {
         int[] myArray = {1, 2, 3, 5, 10, 35, -60, 15, 52};
