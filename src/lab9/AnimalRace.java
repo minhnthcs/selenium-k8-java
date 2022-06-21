@@ -20,7 +20,10 @@ public class AnimalRace {
         animalList.add(bird);
         animalList.add(duck);
         System.out.printf("All animal list: %s\n",animalList.toString());
+        (new AnimalRace()).animalRacing(animalList);
+    }
 
+    public void animalRacing(List<Animal> animalList){
         List<Animal> nonFlyableAnimal = new ArrayList<>();
         for (Animal animal : animalList) {
             if (!animal.isFlyable()){
@@ -46,8 +49,6 @@ public class AnimalRace {
         for (Animal animal : speedRecord.get(maxSpeed)) {
             listOfWinner.add(animal.getName());
         }
-
         System.out.printf("The winner speed is: %d and the winners are: %s", maxSpeed, listOfWinner.toString());
-
     }
 }
